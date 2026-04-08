@@ -8,18 +8,6 @@ public class Main {
 		String choice;
 
 		boolean looper=true;
-
-		Student Ashton=new Student(1, "Ashton", 11);
-		
-		
-		Ashton.setStudentGradeLevel(12);
-		Ashton.setStudentName("AshyTashy");
-		Ashton.setStudentId(2);
-
-		System.out.println(Ashton);
-		System.out.println(Ashton.getStudentGradeLevel());
-		System.out.println(Ashton.getStudentName());
-		System.out.println(Ashton.getStudentId());
 		
 		System.out.println("Welcome to the Codd Student Course Register System.");
 

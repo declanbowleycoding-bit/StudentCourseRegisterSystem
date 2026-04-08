@@ -1,6 +1,6 @@
 
 public class Student {
-
+	
 	private int id;
 	private String name;
 	private int gradeLevel;
@@ -13,27 +13,27 @@ public class Student {
 	}
 	//method land yippee
 	
-	public void setStudentId(int input) {
+	public void setId(int input) {
 		this.id=input;
 	}
 	
-	public int getStudentId() {
+	public int getId() {
 		return id;
 	}
 	
-	public void setStudentName(String input) {
+	public void setName(String input) {
 		this.name=input;
 	}
 	
-	public String getStudentName() {
+	public String getName() {
 		return name;
 	}
 	
-	public void setStudentGradeLevel(int input) {
+	public void setGradeLevel(int input) {
 		this.gradeLevel=input;
 	}
 	
-	public int getStudentGradeLevel() {
+	public int getGradeLevel() {
 		return gradeLevel;
 	}
 	
