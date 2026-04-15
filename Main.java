@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main (String[] args) {
-		
+
 		ArrayList<Student> Students=new ArrayList<>();
 		ArrayList<Course> Courses=new ArrayList<>();
 
 		Scanner console=new Scanner(System.in);
 
 		String choice;
-		
+
 		boolean looper=true;
 
 		System.out.println("Welcome to the Codd Student Course Register System.");
@@ -53,18 +53,24 @@ public class Main {
 				System.out.println(Courses.get((Courses.size())-1));
 
 			}else if(choice.equals("3")) {
-				for(Student e: Students) {
-					System.out.println(e);
+				if(Students.size()>0) {
+					for(Student e: Students) {
+						System.out.println(e);
+					}
+				}else {
+					System.out.println("There are not students registered.");
 				}
-
+				
 			}else if(choice.equals("4")) {
-				for(Course e: Courses) {
-					System.out.println(e);
+				if(Courses.size()>0) {
+					for(Course e: Courses) {
+						System.out.println(e);
+					}
+				}else {
+					System.out.println("There are not courses registered.");
 				}
-
 
 			}else if(choice.equals("5")) {
-				System.out.println("Exit program");
 				break;
 
 			}else {
@@ -82,16 +88,16 @@ public class Main {
 		Scanner console=new Scanner(System.in);
 
 		int intChoice=0;
-	
-			if (console.hasNextInt()) {
-				intChoice=console.nextInt();
 
-			}else {
-				System.out.println("Please type a whole number.");
-				intChoice=numberVerification();
-				
-			}
-			
+		if (console.hasNextInt()) {
+			intChoice=console.nextInt();
+
+		}else {
+			System.out.println("Please type a whole number.");
+			intChoice=numberVerification();
+
+		}
+
 		return intChoice;
 	}
 
